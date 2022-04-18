@@ -2,24 +2,36 @@ body {
   padding: 64px;
 }
 
-.loading {
-  width: 40px;
-  height: 40px;
-  border: 8px solid #ccc;
-  border-right-color: transparent;
-  border-radius: 50%;
-
-  animation: spin 0.8s infinite linear;
+.message {
+  width: 300px;
+  padding: 8px 16px;
+  background: #2c2c2c;
+  color: #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  animation: popup 2s forwards;
 }
 
-@keyframes spin {
-  /* 0%と100%の場合はfromとtoでも指定可能 */
-  /* 0% */
-  from {
-    transform: none;
+@keyframes popup {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+    animation-timing-function: ease-out;
   }
-  /* 100%  */
-  to{
-    transform: rotate(360deg);
+  /* 同じ設定が並ぶ時はカンマ区切りでの指定も可 */
+  20%, 80% {
+    transform: none;
+    opacity: 1;
+  }
+  /* 80% {
+    transform: none;
+    opacity: 1;
+  } */
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
   }
 }
