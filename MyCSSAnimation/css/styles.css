@@ -10,15 +10,14 @@ body {
 
   /* 変化の途中を補完する */
   /* 中間を補完するプロパティを指定 */
-  transition-property: transform;
+  transition-property: transform, background;
   /* 変化にかかる時間を指定 */
   transition-duration: 1s;
-  /* 図形の起点を左上にする */
-  transform-origin: top left;
 }
 
 /* 変化後のスタイル */
 .box:hover {
-  /* 30°回転する */
-  transform: rotate(30deg);
+  /* 横方向に移動する */
+  transform: translateX(30px);
+  background-color: skyblue;
 }
