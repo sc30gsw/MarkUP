@@ -8,24 +8,9 @@ body {
   height: 100px;
   background-color: orange;
 
-  /* アニメーションの設定 */
-  animation-name: move;
-  /* アニメーションの時間の設定 */
-  animation-duration: 2s;
-  /* アニメーションを何回繰り返すかを指定 */
-  /* infiniteで無限に繰り返す */
-  animation-iteration-count: infinite;
-  /* directionで再生順を制御できる */
-  /* アニメーションに折り返しをつける */
-  /* animation-direction: alternate; */
-  /* アニメーションを逆再生する */
-  /* animation-direction: reverse; */
-  /* アニメーションを逆再生し、折り返す */
-  /* animation-direction: alternate-reverse; */
-  /* アニメーションの速度の指定 */
-  /* 要素に指定でアニメーション全体に適用される */
-  /* @keyframeに指定でアニメーションのいずれかの位置に適用される */
-  /* animation-timing-function: linear;  */
+  /* アニメーションの一括指定(順不同・省略可) */
+  /* 時間の値は最初がduration(アニメーションの時間)、次がdelay(アニメーション開始までの時間) */
+  animation: move 2s infinite 1s;
 }
 
 /* アニメーションスタイルの設定 */
@@ -33,7 +18,6 @@ body {
   /* 0%の時、変化なし */
   0% {
     transform: none;
-    animation-timing-function: linear; 
   }
   /* 80%(1.6秒時)の時のアニメーション */
   80% {
