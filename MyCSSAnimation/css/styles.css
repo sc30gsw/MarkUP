@@ -17,6 +17,6 @@ body {
 
 /* 変化後のスタイル */
 .box:hover {
-  /* 横方向に移動してから30°回転する */
-  transform: translateX(100px) rotate(30deg);
+  /* 30°回転してから移動する */
+  transform: rotate(30deg) translateX(100px);
 }
