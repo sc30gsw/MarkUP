@@ -1,0 +1,21 @@
+body {
+  padding: 64px;
+}
+
+/* 変化前のスタイル */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+
+  /* 変化の途中を補完する */
+  /* 中間を補完するプロパティを指定 */
+  transition-property: border-radius;
+  /* 変化にかかる時間を指定 */
+  transition-duration: 1s;
+}
+
+/* 変化後のスタイル */
+.box:hover {
+  border-radius: 50%;
+}
