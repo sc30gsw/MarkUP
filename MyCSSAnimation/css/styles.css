@@ -26,12 +26,18 @@ body {
     transform: none;
     opacity: 1;
   }
-  /* 80% {
-    transform: none;
-    opacity: 1;
-  } */
   100% {
     transform: translateY(20px);
     opacity: 0;
+    /* マウスのイベントに反応しないように設定 */
+    pointer-events: none;
   }
+}
+
+button {
+  width: 300px;
+  padding: 8px 16px;
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
 }
