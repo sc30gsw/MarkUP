@@ -10,12 +10,13 @@ body {
 
   /* 変化の途中を補完する */
   /* 中間を補完するプロパティを指定 */
-  transition-property: border-radius;
+  transition-property: transform;
   /* 変化にかかる時間を指定 */
   transition-duration: 1s;
 }
 
 /* 変化後のスタイル */
 .box:hover {
-  border-radius: 50%;
+  /* X・Y方向に移動する */
+  transform: translate(50px, 20px);
 }
