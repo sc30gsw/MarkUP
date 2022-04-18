@@ -17,6 +17,6 @@ body {
 
 /* 変化後のスタイル */
 .box:hover {
-  /* リサイズ（変形）する */
-  transform: scale(0.5, 2);
+  /* 横方向に移動してから30°回転する */
+  transform: translateX(100px) rotate(30deg);
 }
