@@ -13,10 +13,12 @@ body {
   transition-property: transform;
   /* 変化にかかる時間を指定 */
   transition-duration: 1s;
+  /* 図形の起点を左上にする */
+  transform-origin: top left;
 }
 
 /* 変化後のスタイル */
 .box:hover {
-  /* 30°回転してから移動する */
-  transform: rotate(30deg) translateX(100px);
+  /* 30°回転する */
+  transform: rotate(30deg);
 }
