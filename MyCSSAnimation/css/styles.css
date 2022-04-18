@@ -2,29 +2,16 @@ body {
   padding: 64px;
 }
 
-/* 変化前のスタイル */
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: orange;
-
-  /* アニメーションの一括指定(順不同・省略可) */
-  /* 時間の値は最初がduration(アニメーションの時間)、次がdelay(アニメーション開始までの時間) */
-  animation: move 2s infinite 1s;
+.btn {
+  padding: 16px 32px;
+  background: hsl(200, 100%, 40%);
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-/* アニメーションスタイルの設定 */
-@keyframes move {
-  /* 0%の時、変化なし */
-  0% {
-    transform: none;
-  }
-  /* 80%(1.6秒時)の時のアニメーション */
-  80% {
-    transform: translateX(200px) rotate(360deg);
-  }
-  /* 100%(2秒時)の時のアニメーション */
-  100% {
-    transform: translateX(300px) rotate(360deg);
-  }
+.btn:hover {
+  background: hsl(200, 100%, 45%);
 }
