@@ -12,6 +12,14 @@ body {
   animation-name: move;
   /* アニメーションの時間の設定 */
   animation-duration: 2s;
+  /* アニメーション開始までの時間 */
+  animation-delay: 1s;
+  /* アニメーション終了時の位置を固定する */
+  animation-fill-mode: forwards;
+  /* アニメーションを何回繰り返すかを指定 */
+  /* animation-iteration-count: 2; */
+  /* infiniteで無限に繰り返す */
+  animation-iteration-count: infinite;
 }
 
 /* アニメーションスタイルの設定 */
