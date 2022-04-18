@@ -10,14 +10,15 @@ body {
 
   /* 変化の途中を補完する */
   /* 中間を補完するプロパティを指定 */
-  transition-property: transform, background;
-  /* 変化にかかる時間を指定 */
-  transition-duration: 1s;
+  transition-property: transform;
+  /* アニメーションの時間を指定 */
+  transition-duration: 0.3s;
+  /* アニメーションが開始するまでの時間 */
+  transition-delay: 1s;
 }
 
 /* 変化後のスタイル */
 .box:hover {
   /* 横方向に移動する */
   transform: translateX(30px);
-  background-color: skyblue;
 }
