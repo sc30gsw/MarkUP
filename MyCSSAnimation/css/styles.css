@@ -10,15 +10,21 @@ body {
 
   /* 変化の途中を補完する */
   /* 中間を補完するプロパティを指定 */
-  transition-property: transform;
+  /* transition-property: transform;
   /* アニメーションの時間を指定 */
-  transition-duration: 0.3s;
+  /* transition-duration: 0.3s; */
   /* アニメーションの速度に緩急をつける */
-  transition-timing-function: ease-out;
+  /* transition-timing-function: ease-out; */
+
+  /* transitionの一括指定 */
+  /* 時間の値は最初がtransition-duration(アニメーションの時間)、次がtransition-delay(アニメーション開始までの時間) */
+  /* 複数アニメーションの指定は、カンマ区切りで指定できる */
+  transition: transform 0.3s ease-out 1s, background 0.5s;
 }
 
 /* 変化後のスタイル */
 .box:hover {
   /* 横方向に移動する */
   transform: translateX(30px);
+  background: skyblue;
 }
