@@ -13,8 +13,8 @@ body {
   transition-property: transform;
   /* アニメーションの時間を指定 */
   transition-duration: 0.3s;
-  /* アニメーションが開始するまでの時間 */
-  transition-delay: 1s;
+  /* アニメーションの速度に緩急をつける */
+  transition-timing-function: ease-out;
 }
 
 /* 変化後のスタイル */
